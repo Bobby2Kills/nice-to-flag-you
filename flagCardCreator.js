@@ -11,8 +11,6 @@
 } */
 let score = 0;
 
-
-
 const scoreIncrease = () => {
     score++;
 }
