@@ -1,8 +1,6 @@
 const flagObject = require('./flagObject');
 const fetch = require('isomorphic-fetch');
 
-let previousEnties = [];
-
  async function fetchFlag(){
     let randomNum = Math.floor(Math.random()*10);
     let flagNum = flagObject[randomNum].number;
