@@ -9,37 +9,35 @@
         throw Error("Didn't work fool")
     }
 } */
-let score = 0;
 
-const scoreIncrease = () => {
-    score++;
-}
 
 const flagCardCreator = () => {
     const body = document.querySelector("body");
     let generatedNum = generateNumber();
+    scoreNum = generatedNum;
     let flagNum = flagObject[generatedNum].number;
     previousEntries.push(flagNum)
-    const text = document.createElement("h3");
+    //const text = document.createElement("h3");
     let flagImage = document.createElement("img");
     const scoreCount = document.createElement("p");
     const form = document.createElement("form");
     scoreCount.innerText = `Correct Answers: ${score}/10`
     flagImage.src = `https://countryflagsapi.com/png/${flagNum}`
-    text.textContent = flagObject[generatedNum].name;
-    flagImage.setAttribute("id","flagImage");
-    form.innerHTML = "<input type ='text' ' placeholder='Type country here!'/> <input type='submit' style='display: none' />";
+    //text.textContent = flagObject[generatedNum].name;
+    form.innerHTML = "<input type ='text' ' placeholder='Type country here!' id='userInput'/> <input type='submit' style='display: none' />";
     form.addEventListener("submit", (e)=>{
         e.preventDefault();
         submitFunction() ;
     })
     body.innerHTML = "";
-    form.append(flagImage,text, scoreCount)
+    form.append(flagImage,/*text,*/ scoreCount)
     body.append(form)
 }
 
-const submitFunction = (e) => {
-    scoreIncrease()
+const submitFunction = () => {
+    let input = document.querySelector("#userInput").value
+    console.log(input)
+    scoreIncrease(input)
     flagCardCreator()
 }
 
