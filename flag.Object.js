@@ -1,17 +1,18 @@
 const flagObject = {
+    0: {name:"south africa" , number: "710"},
     1: {name:"afghanistan" , number: "004"},
     2: {name:"albania" , number: "008"},
     3: {name:"algeria" , number: "012"},
-    4: {name:"american Samo" , number: "016"},
+    4: {name:"american samoa" , number: "016"},
     5: {name:"angola" , number: "024"},
     6: {name:"anguilla" , number: "660"},
     7: {name:"antartica" , number: "010"},
-    8:{name:"antigua and barbuda" , number: "028"},
+    8: {name:"antigua and barbuda" , number: "028"},
     9: {name:"argentina" , number: "032"},
     10: {name:"armenia" , number: "051"},
     11: {name:"australia" , number: "036"},
     12: {name:"austria" , number: "040"},
-    13: {name:"aarbados" , number: "052"},
+    13: {name:"barbados" , number: "052"},
     14: {name:"belgium" , number: "056"},
     15: {name:"brazil" , number: "076"},
     16: {name:"canada" , number: "124"},
@@ -50,7 +51,7 @@ const flagObject = {
     49: {name:"iceland" , number: "352"},
     50: {name:"italy" , number: "380"},
     51: {name:"jamaica" , number: "388"},
-    52: {name:"japan" , number: "492"},
+    52: {name:"japan" , number: "392"},
     53: {name:"kenya" , number: "404"},
     54: {name:"kazakhstan" , number: "398"},
     55: {name:"mexico" , number: "484"},
@@ -75,8 +76,5 @@ const flagObject = {
     74: {name:"tunisia" , number: "788"},
     75: {name:"turkey" , number: "792"},
     76: {name:"ukraine" , number: "804"},
-    77: {name:"viet nam" , number: "704"}, //also accept vietnam
-    78: {name:"south africa" , number: "710"},
+    77: {name:"vietnam" , number: "704"}, //also accept vietnam
 }
-
-module.exports = flagObject
