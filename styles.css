@@ -38,11 +38,14 @@ header {
 }
 
 .answer {
-    width: 80%;
+    width: 95%;
     display: block;
-    margin: 80px auto;
-    /* margin-top: 80px; */
     padding: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
 }
 
 .left {
