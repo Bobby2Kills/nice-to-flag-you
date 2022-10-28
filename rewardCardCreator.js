@@ -1,6 +1,6 @@
 const rewardCardCreator = () => {
-    const body = document.querySelector("body");
-    body.innerHTML = "";
+    const main = document.querySelector("main");
+    main.innerHTML = "";
 
     const rewardImg = document.createElement("img");
     const resetButton = document.createElement("button")
@@ -10,5 +10,5 @@ const rewardCardCreator = () => {
     })
     rewardImg.src = `${imageSelector(score)}`;
 
-    body.append(rewardImg,resetButton);
+    main.append(rewardImg,resetButton);
 }

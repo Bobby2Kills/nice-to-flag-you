@@ -1,7 +1,7 @@
 
 const flagCardCreator = () => {
 
-    const body = document.querySelector("body");
+    const main = document.querySelector("main");
     if(previousEntries.length >= 10){
         rewardCardCreator();
         return;
@@ -24,9 +24,9 @@ const flagCardCreator = () => {
         e.preventDefault();
         submitFunction() ;
     })
-    body.innerHTML = "";
+    main.innerHTML = "";
     form.append(flagImage,scoreCount)
-    body.append(form, reset)
+    main.append(form, reset)
     
 }
 
@@ -42,6 +42,7 @@ const submitFunction = () => {
     scoreIncrease(input)
     previousEntries.push(flagObject[scoreNum].number)
     flagCardCreator()
+    previousEntriesCardCreator()
 }
 
 flagCardCreator()
