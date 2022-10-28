@@ -1,10 +1,5 @@
 
 const flagCardCreator = () => {
-    if(previousEntries.length === 10){
-        checkIfTrue()
-        rewardCardCreator();
-        return;
-    }
     const card = document.querySelector("#card");
     let generatedNum = generateNumber();
     scoreNum = generatedNum;
@@ -14,6 +9,13 @@ const flagCardCreator = () => {
     const form = document.createElement("form");
     const container = document.querySelector(".container")
     scoreCount.innerText = `Correct Answers: ${score}/10`
+
+    if(previousEntries.length >= 10){
+        checkIfTrue()
+        rewardCardCreator();
+        return;
+    }
+
     flagImage.src = `https://countryflagsapi.com/png/${flagNum}`
     flagImage.setAttribute("id","flagImage")
     form.innerHTML = "<input type ='text' class='answer' ' placeholder='Type country here!' id='userInput'/> <input type='submit' style='display: none'/><button>skip</button>";
@@ -45,7 +47,6 @@ const checkIfTrue = () => {
 }
 const submitFunction = () => {
     checkIfTrue()
-    console.log("submitpush")
     previousEntriesCardCreator()
     flagCardCreator()
 }
