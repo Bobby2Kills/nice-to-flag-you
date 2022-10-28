@@ -1,7 +1,6 @@
 const rewardCardCreator = () => {
-    const main = document.querySelector("main");
-    main.innerHTML = "";
-
+    const card = document.querySelector("#card");
+    card.innerHTML = "";
     const rewardImg = document.createElement("img");
     const resetButton = document.createElement("button")
     resetButton.innerText = "Play Again!";
@@ -10,5 +9,5 @@ const rewardCardCreator = () => {
     })
     rewardImg.src = `${imageSelector(score)}`;
 
-    main.append(rewardImg,resetButton);
+    card.append(rewardImg,resetButton);
 }

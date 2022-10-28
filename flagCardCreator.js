@@ -1,7 +1,7 @@
 
 const flagCardCreator = () => {
 
-    const card = document.querySelector("card");
+    const card = document.querySelector("#card");
     if(previousEntries.length >= 10){
         rewardCardCreator();
         return;
@@ -10,13 +10,8 @@ const flagCardCreator = () => {
     scoreNum = generatedNum;
     let flagNum = flagObject[generatedNum].number;
     let flagImage = document.createElement("img");
-    const scoreCount = document.createElement("p");
+    const scoreCount = document.querySelector(".score2");
     const form = document.createElement("form");
-    const reset = document.createElement("button");
-    reset.innerText = "Reset"
-    reset.addEventListener("click", ()=>{
-        resetFunction()
-    })
     scoreCount.innerText = `Correct Answers: ${score}/10`
     flagImage.src = `https://countryflagsapi.com/png/${flagNum}`
     form.innerHTML = "<input type ='text' ' placeholder='Type country here!' id='userInput'/> <input type='submit' style='display: none'/><button>skip</button>";
@@ -24,9 +19,9 @@ const flagCardCreator = () => {
         e.preventDefault();
         submitFunction() ;
     })
-    main.innerHTML = "";
-    form.append(flagImage,scoreCount)
-    main.append(form, reset)
+    card.innerHTML = "";
+    form.append(flagImage)
+    card.append(form)
     
 }
 

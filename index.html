@@ -4,18 +4,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/damien-frontend/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-        <script src="./imageSelector.js" defer></script>
-        <script src="" defer></script>
-        <script src="" defer></script>
-        <script src="" defer></script>
-        <script src="" defer></script>
-        <script src="" defer></script>
+        <script src="imageSelector.js" defer></script>
+        <script src="rewardCardCreator.js" defer></script>
+        <script src="flag.Object.js" defer></script>
+        <script src="generateNumber.js" defer></script>
+        <script src="score.js" defer></script>
+        <script src="flagCardCreator.js" defer></script>
+        <script src="previousEntriesCardCreator.js" defer></script>
         <title>Nice to flag you</title>
     </head>
     <header>
-        <button class="reset">reset</button>
+        <button class="reset" onclick="resetFunction()">reset</button>
         <article>Nice To Flag You</article>
         <button class="score1">Score:</button>
     </header>
@@ -36,7 +37,7 @@
             </section>
             <section class="third-section">
                 <sidebar class="right">
-                    <h2 class="score2">score:</h2>
+                    <h2 class="score2">:</h2>
                 </sidebar>
             </section>
         </main>
