@@ -2,8 +2,7 @@
 const flagCardCreator = () => {
 
     const body = document.querySelector("body");
-    if(previousEntries.length === 11){
-        console.log("calling");
+    if(previousEntries.length >= 10){
         rewardCardCreator();
         return;
     }
