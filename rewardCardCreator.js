@@ -3,7 +3,12 @@ const rewardCardCreator = () => {
     body.innerHTML = "";
 
     const rewardImg = document.createElement("img");
+    const resetButton = document.createElement("button")
+    resetButton.innerText = "Play Again!";
+    resetButton.addEventListener("click",()=>{
+        window.location.reload(true);
+    })
     rewardImg.src = `${imageSelector(score)}`;
 
-    body.append(rewardImg);
+    body.append(rewardImg,resetButton);
 }

@@ -36,6 +36,9 @@ const resetFunction = () => {
 
 const submitFunction = () => {
     let input = document.querySelector("#userInput").value
+    if(input === "czech republic"){
+        input = "czechia";
+    }
     scoreIncrease(input)
     previousEntries.push(flagObject[scoreNum].number)
     flagCardCreator()

@@ -24,7 +24,7 @@ const flagObject = {
     22: {name:"czechia" , number: "203"}, //also accept czech republic
     23: {name:"germany" , number: "276"},
     24: {name:"denmark" , number: "208"},
-    25: {name:"estonia" , number: "223"},
+    25: {name:"estonia" , number: "233"},
     26: {name:"egypt" , number: "818"},
     27: {name:"spain" , number: "724"},
     28: {name:"finland" , number: "246"},
