@@ -1,7 +1,7 @@
 
 const flagCardCreator = () => {
 
-    const main = document.querySelector("main");
+    const card = document.querySelector("card");
     if(previousEntries.length >= 10){
         rewardCardCreator();
         return;
