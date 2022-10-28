@@ -2,6 +2,11 @@
 const flagCardCreator = () => {
 
     const body = document.querySelector("body");
+    if(previousEntries.length === 11){
+        console.log("calling");
+        rewardCardCreator();
+        return;
+    }
     let generatedNum = generateNumber();
     scoreNum = generatedNum;
     let flagNum = flagObject[generatedNum].number;
