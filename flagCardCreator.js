@@ -37,6 +37,12 @@ const checkIfTrue = () => {
     if(input === "czech republic"){
         input = "czechia";
     }
+    if(input === "viet nam"){
+        input = "vietnam";
+    }
+    if(input === "antigua"){
+        input = "antigua and barbuda";
+    }
     let result = scoreIncrease(input);
     if(result){
         previousEntries.push({number:flagObject[scoreNum].number, isCorrect:true})
