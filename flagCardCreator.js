@@ -12,16 +12,16 @@ const flagCardCreator = () => {
     let flagImage = document.createElement("img");
     const scoreCount = document.querySelector(".score2");
     const form = document.createElement("form");
+    const container = document.querySelector(".container")
     scoreCount.innerText = `Correct Answers: ${score}/10`
     flagImage.src = `https://countryflagsapi.com/png/${flagNum}`
-    form.innerHTML = "<input type ='text' ' placeholder='Type country here!' id='userInput'/> <input type='submit' style='display: none'/><button>skip</button>";
+    form.innerHTML = "<input type ='text' class='answer' ' placeholder='Type country here!' id='userInput'/> <input type='submit' class='skip' style='display: none'/><button>skip</button>";
     form.addEventListener("submit", (e)=>{
         e.preventDefault();
         submitFunction() ;
     })
-    card.innerHTML = "";
-    form.append(flagImage)
-    card.append(form)
+    container.innerHTML = "";
+    container.append(flagImage, form)
     
 }
 
